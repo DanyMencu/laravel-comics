@@ -63,11 +63,11 @@ footer .footer-content button {
   text-transform: uppercase;
   padding: 1rem 1.5rem;
   background: none;
-  border: 2px solid #145ea3;
+  border: 2px solid #1d81f3;
   transition: background-color 0.3s;
 }
 footer .footer-content button:hover {
-  background: #145ea3;
+  background: #1d81f3;
 }
 footer .socials {
   display: flex;
@@ -76,6 +76,7 @@ footer .socials {
 }
 footer .socials span {
   color: #1d81f3;
+  margin-right: 0.75rem;
 }
 footer .socials a > img {
   height: 85%;
@@ -87,5 +88,58 @@ footer .socials a > img {
 footer .socials a > img:hover {
   filter: brightness(170%);
   box-shadow: 0 0 10px 1px #868686;
+  transform: scale(1.05);
+}
+
+.main-section {
+  background-color: #1c1c1c;
+  padding: 2rem 0;
+}
+.main-section .comics-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-section .content {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.main-section .content .comic {
+  width: 14%;
+  margin: 1rem 1%;
+  text-decoration: none;
+}
+.main-section .content .comic .poster {
+  height: 150px;
+}
+.main-section .content .comic .poster img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main-section .content .comic .title {
+  padding: 1rem 0 0;
+}
+.main-section .content .comic:hover img {
+  filter: contrast(110%);
+}
+.main-section .content .comic:hover .title {
+  color: #1d81f3;
+  text-decoration: underline;
+}
+.main-section button {
+  margin: 1rem auto;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #1d81f3;
+  padding: 10px 60px;
+  border: 0;
+  transition: all 0.15s;
+}
+.main-section button:hover {
   transform: scale(1.05);
 }

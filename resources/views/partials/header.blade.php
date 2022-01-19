@@ -5,12 +5,14 @@
             </a>
             <ul class="nav">
                 <li>
-                    <a href="/" class="active">
+                    <a href="{{ route('home') }}"
+                        @if (Request::route()->getName() === 'home') class="active" @endif>
                         Comics
                     </a>
                 </li>
                 <li>
-                    <a href="/news">
+                    <a href="/news"
+                    @if (Request::route()->getName() === 'home') class="news" @endif>
                         News
                     </a>
                 </li>
