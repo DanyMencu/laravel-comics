@@ -1,0 +1,36 @@
+header {
+    height: 10vh;
+    background-color: $white-bg;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    padding: 0.5rem 0 0;
+
+    img {
+        margin-right: 1rem;
+        padding: 0 0 5px;
+        height: 100%;
+    }
+    
+    li {
+        height: 100%;
+        margin: 0 1rem;
+        display: flex;
+        align-items: center;
+
+    }
+    a {
+        height: 100%;
+        text-decoration: none;
+        color: $black;
+    }
+
+    .active {
+        color: $secondary-col;
+        border-bottom: 2px solid $secondary-col;
+    }
+}

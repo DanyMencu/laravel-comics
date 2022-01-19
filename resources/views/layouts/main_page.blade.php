@@ -6,15 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     {{-- Google font --}}
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;600;700&display=swap" rel="stylesheet">
+    {{-- CSS --}}
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>Document</title>
 </head>
 <body>
-    <header>Header here</header>
+    @include('partials.header')
 
     <main>
         @yield('main-content')
     </main>
 
-    <footer>Footer here</footer>
+    @include('partials.footer')
+
 </body>
 </html>

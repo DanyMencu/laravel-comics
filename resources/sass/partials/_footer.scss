@@ -1,0 +1,48 @@
+footer {
+    background-color: $gray-bg;
+    border-top: 10px solid $secondary-col;
+    padding: 1rem 0;
+    color: $primary-col;
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            color: $primary-col;
+            text-transform: uppercase;
+            padding: 1rem 1.5rem;
+            background: none;
+            border: 2px solid #145ea3;
+            transition: background-color 0.3s;
+            
+            &:hover { 
+                background: #145ea3;
+            }
+        }
+    }
+
+    .socials {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            color: $secondary-col;
+        }
+
+        a > img {
+            height: 85%;
+            margin: 0 0.5rem;
+            border: 0 solid #797979;
+            border-radius: 50%;
+            transition: all 0.25s;
+
+            &:hover {
+                filter:brightness(170%);
+                box-shadow: 0 0 10px 1px #868686;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
