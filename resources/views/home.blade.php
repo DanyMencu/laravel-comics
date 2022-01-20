@@ -1,5 +1,7 @@
 @extends('layouts.main_page')
 
+@section('head-title', 'Comics | DC Comics')
+
 @section('main-content')
 
 <section class="main-section">

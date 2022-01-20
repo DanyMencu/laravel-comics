@@ -14,7 +14,7 @@
                 </li>
                 <li>
                     <a href="/news"
-                    @if (Request::route()->getName() === 'home') class="news" @endif>
+                    @if (Request::route()->getName() === 'news') class="active" @endif>
                         News
                     </a>
                 </li>

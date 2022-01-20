@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;600;700&display=swap" rel="stylesheet">
     {{-- CSS --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <title>Document</title>
+    <title>@yield('head-title', 'DC Comics')</title>
 </head>
 <body>
     @include('partials.header')
