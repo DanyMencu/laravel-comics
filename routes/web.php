@@ -37,6 +37,10 @@ Route::get('/comic-details/{id}', function($id) {
         abort(404);
     }
 
+    return view('comic-details', [
+        'comics' => $comics
+    ]);
+
 })->name('comic-details');
 
 //NEWS

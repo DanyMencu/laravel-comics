@@ -8,8 +8,8 @@
     <div class="container">
         <div class="comics-section">
             <div class="content">
-                @foreach ($comics as $comic)
-                    <a href="" class="comic ">
+                @foreach ($comics as $index => $comic)
+                    <a href="{{ route('comic-details', ['id' => $index]) }}" class="comic ">
                         <div class="poster">
                             <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                         </div>
