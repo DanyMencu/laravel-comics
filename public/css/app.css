@@ -15,6 +15,15 @@ body {
   margin: 0 auto;
 }
 
+.text-normal {
+  text-transform: none;
+}
+
+.text-right {
+  text-align: right;
+  display: block;
+}
+
 header {
   height: 10vh;
   background-color: #ffffff;
@@ -148,4 +157,90 @@ footer .socials a > img:hover {
 }
 .main-section button:hover {
   transform: scale(1.05);
+}
+
+.comic-section .jumbotron {
+  width: 100%;
+  height: 50vh;
+  background-image: url(../images/jumbotron.jpg);
+}
+.comic-section .comic-content {
+  position: relative;
+  padding: 0 8rem;
+  border-top: 80px solid #1d81f3;
+}
+.comic-section .comic-content .comic-poster {
+  width: 150px;
+  height: 250px;
+  position: absolute;
+  bottom: 100%;
+  transform: translateY(-10%);
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.comic-section .comic-content .comic-poster img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.comic-section .comic-content .comic-poster .genre,
+.comic-section .comic-content .comic-poster .btn-gallery {
+  position: absolute;
+  background-color: #01a8da;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 1px 4px;
+}
+.comic-section .comic-content .comic-poster .btn-gallery {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+}
+.comic-section .comic-content .comic-poster .btn-gallery:hover {
+  text-decoration: underline;
+}
+.comic-section .comic-content .comic-details {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 4rem 0;
+}
+.comic-section .comic-content .comic-details .description {
+  margin: 2rem;
+  width: 70%;
+}
+.comic-section .comic-content .comic-details .description .price-availability {
+  display: flex;
+  align-items: center;
+  color: #acf58d;
+  background-color: #55ba59;
+  text-transform: none;
+  margin: 1rem 0;
+}
+.comic-section .comic-content .comic-details .description .price-availability .left-side,
+.comic-section .comic-content .comic-details .description .price-availability .right-side {
+  padding: 0.75rem 1rem;
+}
+.comic-section .comic-content .comic-details .description .price-availability .left-side {
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid black;
+  flex-grow: 1;
+}
+.comic-section .comic-content .comic-details .description .price-availability .visibile,
+.comic-section .comic-content .comic-details .description .price-availability .right-side {
+  color: #ffffff;
+}
+.comic-section .comic-content .comic-details .adv {
+  width: 30%;
+}
+.comic-section .comic-content .comic-details .adv img {
+  width: 100%;
+  height: 100%;
 }

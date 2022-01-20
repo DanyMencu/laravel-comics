@@ -1,0 +1,104 @@
+.comic-section {
+
+    .jumbotron {
+        width: 100%;
+        height: 50vh;
+        background-image: url( ../images/jumbotron.jpg );
+    }
+
+    .comic-content {
+        position: relative;
+        padding: 0 8rem;
+        border-top: 80px solid $secondary-col;
+        
+        //POSTER
+        .comic-poster {
+            width: 150px;
+            height: 250px;
+            position: absolute;
+            bottom: 100%;
+            transform: translateY(-10%);
+            color: $primary-col;
+            border: 1px solid #ffffff;
+    
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .genre,
+            .btn-gallery {
+                position: absolute;
+                background-color: $lightblue;
+                font-size: 14px;
+                font-weight: normal;
+                padding: 1px 4px;
+            }
+
+            .btn-gallery {
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $primary-col;
+                border: 0;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        //DESCRIPTION AND DETAILS
+        .comic-details {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: 4rem 0;
+
+            .description {
+                margin: 2rem;
+                width: 70%;
+
+                .price-availability {
+                    display: flex;
+                    align-items: center;
+                    color: $lightgreen-txt;
+                    background-color: $lightgreen;
+                    text-transform: none;
+                    margin: 1rem 0;
+                    
+                    .left-side,
+                    .right-side {
+                        padding: 0.75rem 1rem;
+                    }
+    
+                    .left-side {
+                        display: flex;
+                        justify-content: space-between;
+                        border-right: 1px solid black;
+                        flex-grow: 1;
+                    }
+    
+                    .visibile,
+                    .right-side {
+                        color: $primary-col;
+                    }
+                }
+            }
+
+            .adv {
+                width: 30%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+}

@@ -29,16 +29,15 @@ Route::get('/comic-details/{id}', function($id) {
 
     //Comics data
     $comics = config('comics-data');
-    dump($comics, $id);
-
+    
     if( is_numeric($id) && $id >= 0 && $id < count($comics) ) {
         $comic = $comics[$id];
     } else {
         abort(404);
     }
-
+    
     return view('comic-details', [
-        'comics' => $comics
+        'comic' => $comic
     ]);
 
 })->name('comic-details');
