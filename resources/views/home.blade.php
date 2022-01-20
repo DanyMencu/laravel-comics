@@ -13,7 +13,7 @@
                         <div class="poster">
                             <img src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
                         </div>
-                        <h3 class="title">{{ $comic['title'] }}</h3>
+                        <h3 class="title">{{ $comic['series'] }}</h3>
                     </a>
                 @endforeach
             </div>
